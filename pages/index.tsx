@@ -18,12 +18,11 @@ export default function Home() {
                 Ziyi Zhu
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                VP of Developer Experience at{' '}
-                <span className="font-semibold">Vercel</span>
+                Quantitative Researcher at{' '}
+                <span className="font-semibold">Seamless Capital</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Helping developers build a faster web. Teaching about web
-                development, serverless, and React / Next.js.
+                Solving challenging real-world problems with machine intelligence and data-driven mathematical tools.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -34,7 +33,7 @@ export default function Home() {
                 src="/avatar.jpg"
                 sizes="30vw"
                 priority
-                className="rounded-full filter grayscale"
+                className="rounded-full filter"
               />
             </div>
           </div>
@@ -44,18 +43,18 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              slug="style-guides-component-libraries-design-systems"
+              title="A Short Summary on Clean Code"
+              slug="clean-code"
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <BlogPostCard
-              title="Rust Is The Future of JavaScript Infrastructure"
-              slug="rust"
+              title="A Short Summary on Clean Code"
+              slug="clean-code"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
             <BlogPostCard
-              title="Past, Present, and Future of React State Management"
-              slug="react-state-management"
+              title="A Short Summary on Clean Code"
+              slug="clean-code"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
@@ -83,7 +82,7 @@ export default function Home() {
           </Link>
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-            Learn React & Next.js
+            Acoustic Guitar Cover
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             Build and deploy a modern SaaS application using the most popular
@@ -92,32 +91,26 @@ export default function Home() {
           </p>
           <VideoCard
             index="01"
-            href="https://www.youtube.com/watch?v=MxR5I5_hOKk&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=2"
-            length="1:02:45"
-            title="Introduction to React 2025"
+            href="https://youtu.be/JqTIkdMLcHw"
+            length="02:39"
+            title="Sungha Jung - Seventh #9"
           />
           <VideoCard
             index="02"
-            href="https://www.youtube.com/watch?v=AGl52moyISU&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=3"
-            length="54:22"
-            title="Firestore, Chakra UI, Absolute Imports"
+            href="https://youtu.be/BS11lif_yuM"
+            length="03:16"
+            title="IU - Through The Night"
           />
           <VideoCard
             index="03"
-            href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
-            length="1:08:30"
-            title="Designing & Building the Dashboard"
-          />
-          <VideoCard
-            index="04"
-            href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
-            length="1:13:45"
-            title="Firebase Admin with Next.js + SWR"
+            href="https://youtu.be/3Tr_-s0pZjs"
+            length="03:03"
+            title="Secret Base ～君がくれたもの～"
           />
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.youtube.com/playlist?list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1"
+            href="https://www.youtube.com/@ziyizhu5030"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
           >
             Watch all videos
