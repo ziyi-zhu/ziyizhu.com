@@ -48,6 +48,9 @@ function GuestbookEntry({ entry, user }) {
 
 export default function Guestbook({ fallbackData }) {
   const { data: session } = useSession();
+
+  console.log(session);
+
   const { mutate } = useSWRConfig();
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef(null);
