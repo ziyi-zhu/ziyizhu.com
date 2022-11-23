@@ -37,8 +37,8 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Ziyi Zhu – Developer, writer, creator.',
-    description: `Front-end developer, JavaScript enthusiast, and course creator.`,
+    title: 'Ziyi Zhu – Researcher, developer, artist.',
+    description: `Quantitative researcher, tech enthusiast, and artist.`,
     image: 'https://www.ziyizhu.com/static/images/lee-banner.png',
     type: 'website',
     ...customMeta
@@ -58,7 +58,7 @@ export default function Container(props) {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@leeerob" />
+        <meta name="twitter:site" content="@neoziyism" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />

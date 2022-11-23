@@ -48,13 +48,13 @@ export default function Home() {
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <BlogPostCard
-              title="A Short Summary on Clean Code"
-              slug="clean-code"
+              title="Principles By Ray Dalio: Short Summary"
+              slug="principles"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
             <BlogPostCard
-              title="A Short Summary on Clean Code"
-              slug="clean-code"
+              title="Generating Pokemon with Deep Convolutional GANs"
+              slug="pokemon-generation"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
@@ -85,9 +85,8 @@ export default function Home() {
             Acoustic Guitar Cover
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Build and deploy a modern SaaS application using the most popular
-            open-source software. This course is 12 hours long and is completely
-            live streamed.
+             Music and art are the guiding lights of the world.
+             This channel features some of my acoustic guitar cover of popular songs.
           </p>
           <VideoCard
             index="01"
@@ -99,13 +98,25 @@ export default function Home() {
             index="02"
             href="https://youtu.be/BS11lif_yuM"
             length="03:16"
-            title="IU - Through The Night"
+            title="아이유 IU - Through The Night"
           />
           <VideoCard
             index="03"
+            href="https://youtu.be/CgwppQEoTkk"
+            length="04:46"
+            title="松井佑贵 Yuki Matsui - Sunny Day"
+          />
+          <VideoCard
+            index="04"
             href="https://youtu.be/3Tr_-s0pZjs"
             length="03:03"
             title="Secret Base ～君がくれたもの～"
+          />
+          <VideoCard
+            index="05"
+            href="https://youtu.be/z2txWTlBmTQ"
+            length="05:18"
+            title="松井佑贵 Yuki Matsui - Rider"
           />
           <a
             target="_blank"
