@@ -7,7 +7,7 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const accessToken = process.env.UNSPLASH_ACCESS_KEY;
   const response = await fetch(
-    `https://api.unsplash.com/users/leerob/statistics?client_id=${accessToken}`,
+    `https://api.unsplash.com/users/ziyizhu/statistics?client_id=${accessToken}`,
     {
       method: 'GET'
     }
