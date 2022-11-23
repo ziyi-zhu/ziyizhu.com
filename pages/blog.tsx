@@ -58,6 +58,11 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
+              title="Resources for Low Resource Machine Translation"
+              excerpt="This blog post highlights a wide variety of techniques to employ when trying to create a new machine translation model for a low resource language or improve an existing baseline."
+              slug="low-resource-machine-translation"
+            />
+            <BlogPost
               title="A Short Summary on Clean Code"
               excerpt="This blog post summarizes the guidelines and best practices for writing high-quality code from the book Clean Code by Robert C. Martin."
               slug="clean-code"
