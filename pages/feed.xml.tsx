@@ -5,15 +5,15 @@ import { indexQuery } from 'lib/queries';
 export async function getServerSideProps({ res }) {
   const feed = new RSS({
     title: 'Ziyi Zhu',
-    site_url: 'https://leerob.io',
-    feed_url: 'https://leerob.io/feed.xml'
+    site_url: 'https://www.ziyizhu.com',
+    feed_url: 'https://www.ziyizhu.com/feed.xml'
   });
 
   const allPosts = await sanityClient.fetch(indexQuery);
   allPosts.map((post) => {
     feed.item({
       title: post.title,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `https://www.ziyizhu.com/blog/${post.slug}`,
       date: post.date,
       description: post.excerpt
     });
