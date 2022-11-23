@@ -14,7 +14,7 @@ export default async function handler(
   });
 
   const response = await youtube.channels.list({
-    id: 'UCZMli3czZnd1uoc1ShTouQw',
+    id: 'UC0snS_FYHj_5y_uFmWzp2hg',
     part: 'statistics'
   });
 
