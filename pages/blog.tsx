@@ -68,9 +68,9 @@ export default function Blog({
               slug="low-resource-machine-translation"
             />
             <BlogPost
-              title="A Short Summary on Clean Code"
-              excerpt="This blog post summarizes the guidelines and best practices for writing high-quality code from the book Clean Code by Robert C. Martin."
-              slug="clean-code"
+              title="Black Scholes Model with Stock Simulation"
+              excerpt="The article explores the use of geometric Brownian Motion (GBM) to simulate the price of stocks with extension to the Black-Scholes-Merton (BSM) model."
+              slug="black-scholes"
             />
           </>
         )}
