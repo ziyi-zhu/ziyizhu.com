@@ -13,61 +13,29 @@ export default function About() {
           About Me
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
-          <h2>Links</h2>
-          <ul>
-            <li>
-              Twitter: <a href="https://twitter.com/leeerob">@leeerob</a>
-            </li>
-            <li>
-              GitHub: <a href="https://github.com/leerob">@leerob</a>
-            </li>
-            <li>
-              Website: <Link href="https://www.ziyizhu.com">https://www.ziyizhu.com</Link>
-            </li>
-            <li>
-              LinkedIn:{' '}
-              <a href="https://www.linkedin.com/in/leeerob/">
-                https://www.linkedin.com/in/leeerob
-              </a>
-            </li>
-          </ul>
-          <h2>Bio</h2>
-          <h3>Job Title</h3>
-          <p>Ziyi Zhu, VP of Developer Experience at Vercel</p>
-          <h3>Long, 3rd Person</h3>
           <p>
-            Ziyi Zhu is the VP of Developer Experience at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web and leads the Next.js community. He leads the
-            community for the React framework Next.js and is an open-source
-            contributor. An educator, writer, and speaker, Lee has created
-            courses on React, Next.js, and web development.
+            I am a technology enthusiast who is deeply passionate 
+            about <strong>machine intelligence</strong> and <strong>quantitative finance</strong>.
+            I dedicated my time to exploring the use of novel technologies and data-driven 
+            mathematical tools to solve challenging real-world problems. I am 
+            also an aspiring artist who loves to add a creative touch to my work. 
+            I am constantly learning because I never settle.
           </p>
-          <h3>Long, 1st Person</h3>
+          <h2>Biography</h2>
+          <h3>Work Experiences</h3>
           <p>
-            Hey, I'm Lee. I'm the VP of Developer Experience at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web. I'm a Next.js contributor and help
-            lead our open-source communities. I'm passionate about frontend
-            development and have created courses on React, Next.js, and web
-            development. I'm an advisor and investor in early stage startups.
-          </p>
-          <h3>Short, 3rd Person</h3>
-          <p>
-            Ziyi Zhu is the VP of Developer Experience at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web.
-          </p>
-          <h3>Short, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I'm the VP of Developer Experience at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web.
+            Ziyi Zhu was a Quantitative Researcher at{' '}
+            <a href="https://seamlessml.com/">Seamless Capital</a>, where he helps
+            to develop redictive modelling for alternative assets using machine 
+            learning and statistics. He was also part of the founding team and 
+            main developer who built a conversational AI 
+            platform <a href="https://chai.ml/">Chai</a> with 100,000 daily
+            active users.
           </p>
           <h3>Education</h3>
           <p>
-            Ziyi Zhu graduated from Iowa State University with a B.S. in
-            Computer Engineering.
+            Ziyi Zhu graduated from the University of Cambridge with a B.A. in
+            Information and Computer Engineering.
           </p>
           <h2>Headshots</h2>
           <div className="flex space-x-8">

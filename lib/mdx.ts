@@ -1,19 +1,25 @@
 import { serialize } from 'next-mdx-remote/serialize';
 import readingTime from 'reading-time';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
 import rehypeSlug from 'rehype-slug';
 import rehypeCodeTitles from 'rehype-code-titles';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
+import rehypeKatex from 'rehype-katex';
 
 export async function mdxToHtml(source) {
   const mdxSource = await serialize(source, {
     mdxOptions: {
-      remarkPlugins: [remarkGfm],
+      remarkPlugins: [
+        remarkGfm,
+        remarkMath
+      ],
       rehypePlugins: [
         rehypeSlug,
         rehypeCodeTitles,
         rehypePrism,
+        rehypeKatex,
         [
           rehypeAutolinkHeadings,
           {

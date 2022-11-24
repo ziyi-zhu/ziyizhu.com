@@ -58,6 +58,11 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
+              title="Kelly Criterion and Optimal Betting Strategy"
+              excerpt="Kelly is given credit for the idea of using log utility in gambling and repeated investment problems, as such it is known as the Kelly criterion."
+              slug="kelly-criterion"
+            />
+            <BlogPost
               title="Resources for Low Resource Machine Translation"
               excerpt="This blog post highlights a wide variety of techniques to employ when trying to create a new machine translation model for a low resource language or improve an existing baseline."
               slug="low-resource-machine-translation"
