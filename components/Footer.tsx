@@ -56,12 +56,6 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           <Link
-            href="/uses"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Uses
-          </Link>
-          <Link
             href="/guestbook"
             className="text-gray-500 hover:text-gray-600 transition"
           >

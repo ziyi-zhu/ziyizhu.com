@@ -14,6 +14,7 @@ export const getTweets = async (ids) => {
       'duration_ms,height,media_key,preview_image_url,type,url,width,public_metrics'
   });
 
+  console.log(process.env.TWITTER_API_KEY);
   const response = await fetch(
     `https://api.twitter.com/2/tweets?${queryParams}`,
     {
