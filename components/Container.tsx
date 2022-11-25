@@ -37,7 +37,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Ziyi Zhu – Researcher, developer, artist.',
+    title: 'Ziyi Zhu – Researcher, Developer, Artist.',
     description: `Quantitative researcher, tech enthusiast, and artist.`,
     image: 'https://www.ziyizhu.com/static/images/lee-banner.png',
     type: 'website',
