@@ -39,7 +39,7 @@ export default function Container(props) {
   const meta = {
     title: 'Ziyi Zhu – Researcher, Developer, Artist.',
     description: `Quantitative researcher, tech enthusiast, and artist.`,
-    image: 'https://www.ziyizhu.com/static/images/lee-banner.png',
+    image: 'https://www.ziyizhu.com/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
