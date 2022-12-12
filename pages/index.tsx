@@ -48,8 +48,8 @@ export default function Home() {
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <BlogPostCard
-              title="Resources for Low Resource Machine Translation"
-              slug="low-resource-machine-translation"
+              title="Granger Causality and Hypothesis Testing"
+              slug="granger-causality"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
             <BlogPostCard

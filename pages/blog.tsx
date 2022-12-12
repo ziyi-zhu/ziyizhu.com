@@ -63,9 +63,9 @@ export default function Blog({
               slug="kelly-criterion"
             />
             <BlogPost
-              title="Resources for Low Resource Machine Translation"
-              excerpt="This blog post highlights a wide variety of techniques to employ when trying to create a new machine translation model for a low resource language or improve an existing baseline."
-              slug="low-resource-machine-translation"
+              title="Granger Causality and Hypothesis Testing"
+              excerpt="This article discusses causal illusions as a form of cognitive bias and explores the use of Granger causality to detect causal structures in time series."
+              slug="granger-causality"
             />
             <BlogPost
               title="Black Scholes Model with Stock Simulation"
