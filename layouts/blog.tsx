@@ -49,10 +49,7 @@ export default function BlogLayout({
           <div className="w-full mt-4 prose dark:prose-dark max-w-none">
             {children}
           </div>
-          <div className="mt-8">
-            <Subscribe />
-          </div>
-          <div className="text-sm text-gray-700 dark:text-gray-300">
+          <div className="mt-8 text-sm text-gray-700 dark:text-gray-300">
             <a
               href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
                 `https://www.ziyizhu.com/blog/${post.slug}`
@@ -64,7 +61,7 @@ export default function BlogLayout({
             </a>
             {` • `}
             <a
-              href="https://github.com/leerob/www.ziyizhu.com/issues"
+              href="https://github.com/ziyi-zhu/ziyizhu.com/issues"
               target="_blank"
               rel="noopener noreferrer"
             >

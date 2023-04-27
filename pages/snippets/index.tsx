@@ -20,7 +20,7 @@ export default function Snippets({
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are a collection of code snippets I've used in the past and
           saved. Some are Serverless Functions, which include set up
-          instructions. Others are anything from random CSS snippets to Node.js
+          instructions. Others are anything from random Python snippets to Node.js
           scripts.
         </p>
         <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">

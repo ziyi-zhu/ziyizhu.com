@@ -32,12 +32,6 @@ export default function Footer() {
           >
             About
           </Link>
-          <Link
-            href="/newsletter"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Newsletter
-          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://www.linkedin.com/in/ziyizhu/">
