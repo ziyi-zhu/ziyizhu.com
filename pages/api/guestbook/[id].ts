@@ -13,13 +13,13 @@ export default async function handler(
 
   const entry = await prisma.guestbook.findUnique({
     where: {
-      id: Number(id)
+      id: String(id)
     }
   });
 
   if (req.method === 'GET') {
     return res.json({
-      id: entry.id.toString(),
+      id: entry.id,
       body: entry.body,
       created_by: entry.created_by,
       updated_at: entry.updated_at
@@ -33,7 +33,7 @@ export default async function handler(
   if (req.method === 'DELETE') {
     await prisma.guestbook.delete({
       where: {
-        id: Number(id)
+        id: String(id)
       }
     });
 
@@ -45,7 +45,7 @@ export default async function handler(
 
     await prisma.guestbook.update({
       where: {
-        id: Number(id)
+        id: String(id)
       },
       data: {
         body,
