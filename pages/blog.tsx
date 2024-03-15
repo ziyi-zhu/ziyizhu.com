@@ -63,9 +63,9 @@ export default function Blog({
               slug="kelly-criterion"
             />
             <BlogPost
-              title="Granger Causality and Hypothesis Testing"
-              excerpt="This article discusses causal illusions as a form of cognitive bias and explores the use of Granger causality to detect causal structures in time series."
-              slug="granger-causality"
+              title="Probability of Stop-Limit Order Execution"
+              excerpt="This article explores the dynamics underlying a stop-limit order and attempts to calculate its probability of execution under a geometric Brownian motion."
+              slug="stop-limit-order"
             />
             <BlogPost
               title="Black Scholes Model with Stock Simulation"

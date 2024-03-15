@@ -48,8 +48,8 @@ export default function Home() {
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <BlogPostCard
-              title="Granger Causality and Hypothesis Testing"
-              slug="granger-causality"
+              title="Probability of Stop-Limit Order Execution"
+              slug="stop-limit-order"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
             <BlogPostCard
