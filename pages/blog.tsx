@@ -25,7 +25,7 @@ export default function Blog({
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2018, mostly about engineering and quantitative finance.
+          {`I've been writing online since 2018, mostly about machine learning and quantitative finance.
             In total, I've written ${posts.length} articles on my blog.
             Use the search below to filter by title.`}
         </p>
