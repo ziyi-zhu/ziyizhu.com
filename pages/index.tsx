@@ -18,8 +18,8 @@ export default function Home() {
                 Ziyi Zhu
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                Senior Applied Scientist at{' '}
-                <span className="font-semibold">Unlikely AI</span>
+                Member of Technical Staff at{' '}
+                <span className="font-semibold">Slingshot AI</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
                 Solving challenging real-world problems with machine intelligence and data-driven mathematical tools.

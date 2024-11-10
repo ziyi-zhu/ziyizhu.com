@@ -41,12 +41,6 @@ export default function Footer() {
           <ExternalLink href="https://www.youtube.com/channel/UC0snS_FYHj_5y_uFmWzp2hg">
             YouTube
           </ExternalLink>
-          <ExternalLink href="https://instagram.com/neoziyism">
-            Instagram
-          </ExternalLink>
-          <ExternalLink href="https://twitter.com/neoziyism">
-            Twitter
-          </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
           <Link
