@@ -43,6 +43,11 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
+              title="Temporal Difference Learning for Conversational AI"
+              slug="td-lambda-conversation"
+              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
+            />
+            <BlogPostCard
               title="Kelly Criterion and Optimal Betting Strategy"
               slug="kelly-criterion"
               gradient="from-[#D8B4FE] to-[#818CF8]"
@@ -51,11 +56,6 @@ export default function Home() {
               title="Probability of Stop-Limit Order Execution"
               slug="stop-limit-order"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-            />
-            <BlogPostCard
-              title="Black Scholes Model with Stock Simulation"
-              slug="black-scholes"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
           <Link

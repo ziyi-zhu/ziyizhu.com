@@ -58,6 +58,11 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
+              title="Temporal Difference Learning for Conversational AI"
+              excerpt="In this blog post, we'll explore how Temporal Difference (TD) learning, a fundamental RL technique, can be applied to improve conversational agents."
+              slug="td-lambda-conversation"
+            />
+            <BlogPost
               title="Kelly Criterion and Optimal Betting Strategy"
               excerpt="Kelly is given credit for the idea of using log utility in gambling and repeated investment problems, as such it is known as the Kelly criterion."
               slug="kelly-criterion"
@@ -66,11 +71,6 @@ export default function Blog({
               title="Probability of Stop-Limit Order Execution"
               excerpt="This article explores the dynamics underlying a stop-limit order and attempts to calculate its probability of execution under a geometric Brownian motion."
               slug="stop-limit-order"
-            />
-            <BlogPost
-              title="Black Scholes Model with Stock Simulation"
-              excerpt="The article explores the use of geometric Brownian Motion (GBM) to simulate the price of stocks with extension to the Black-Scholes-Merton (BSM) model."
-              slug="black-scholes"
             />
           </>
         )}
