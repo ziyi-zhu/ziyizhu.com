@@ -63,14 +63,14 @@ export default function Blog({
               slug="td-lambda-conversation"
             />
             <BlogPost
-              title="Kelly Criterion and Optimal Betting Strategy"
-              excerpt="Kelly is given credit for the idea of using log utility in gambling and repeated investment problems, as such it is known as the Kelly criterion."
-              slug="kelly-criterion"
-            />
-            <BlogPost
               title="Stop-Limit Order Execution via Martingale Theory"
               excerpt="This article explores the dynamics underlying a stop-limit order and attempts to calculate its probability of execution under a geometric Brownian motion."
               slug="stop-limit-order"
+            />
+            <BlogPost
+              title="Kelly Criterion and Optimal Betting Strategy"
+              excerpt="This blog examines the mathematical foundation of the Kelly criterion and explores the idea of using log utility in gambling and repeated investment problems."
+              slug="kelly-criterion"
             />
           </>
         )}

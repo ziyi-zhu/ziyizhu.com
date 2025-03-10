@@ -48,14 +48,14 @@ export default function Home() {
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
             <BlogPostCard
-              title="Kelly Criterion and Optimal Betting Strategy"
-              slug="kelly-criterion"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
-            />
-            <BlogPostCard
               title="Stop-Limit Order Execution via Martingale Theory"
               slug="stop-limit-order"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
+            />
+            <BlogPostCard
+              title="Kelly Criterion and Optimal Betting Strategy"
+              slug="kelly-criterion"
+              gradient="from-[#D8B4FE] to-[#818CF8]"
             />
           </div>
           <Link
