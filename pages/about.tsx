@@ -24,17 +24,30 @@ export default function About() {
           <h2>Biography</h2>
           <h3>Work Experiences</h3>
           <p>
-            Ziyi Zhu was a Quantitative Researcher at{' '}
-            <a href="https://seamlessml.com/">Seamless Capital</a>, where he helps
-            to develop redictive modelling for alternative assets using machine 
+            Ziyi Zhu is currently a Member of Technical Staff at{' '}
+            <a href="https://slingshot.xyz/">Slingshot AI</a>, where he was the 10th employee to join the team.
+            He is focused on training a foundation model for human psychology, aiming to create AI systems
+            that better understand and respond to human needs, emotions, and cognitive processes.
+          </p>
+          <p>
+            Previously, he was a Senior Applied Scientist at{' '}
+            <a href="https://unlikely.ai/">Unlikely AI</a>, where he was the second ML hire.
+            There, he contributed to building an accurate, trustworthy and explainable Neuro-symbolic AI platform
+            that combines traditional rule-based systems with modern neural networks to create
+            more interpretable and reliable AI solutions.
+          </p>
+          <p>
+            Before that, Ziyi was a Quantitative Researcher at{' '}
+            <a href="https://seamlessml.com/">Seamless Capital</a>, where he helped
+            to develop predictive modelling for alternative assets using machine 
             learning and statistics. He was also part of the founding team and 
             main developer who built a conversational AI 
-            platform <a href="https://chai.ml/">Chai</a> with 100,000 daily
+            platform <a href="https://www.chai-research.com/">Chai</a> with 1M daily
             active users.
           </p>
           <h3>Education</h3>
           <p>
-            Ziyi Zhu graduated from the University of Cambridge with a B.A. in
+            Ziyi Zhu graduated from the University of Cambridge with a M.A. in
             Information and Computer Engineering.
           </p>
           <h2>Headshots</h2>
