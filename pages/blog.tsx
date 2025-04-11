@@ -58,9 +58,9 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
-              title="Temporal Difference Learning in Dialogue Systems"
-              excerpt="In this blog post, we'll explore how Temporal Difference (TD) learning, a fundamental RL technique, can be applied to improve conversational AI agents."
-              slug="td-lambda-conversation"
+              title="Policy Optimization: From Vanilla Policy Gradients to GRPO"
+              excerpt="The blog explores the evolution from vanilla policy gradients to modern approaches like Proximal Policy Optimization (PPO) and the more recent Group Relative Policy Optimization (GRPO)."
+              slug="policy-optimization"
             />
             <BlogPost
               title="Stop-Limit Order Execution via Martingale Theory"

@@ -43,8 +43,8 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
-              title="Temporal Difference Learning in Dialogue Systems"
-              slug="td-lambda-conversation"
+              title="Policy Optimization: From Vanilla Policy Gradients to GRPO"
+              slug="policy-optimization"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
             <BlogPostCard
