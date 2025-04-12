@@ -11,7 +11,7 @@ export default function Snippets({
   return (
     <Container
       title="Snippets – Ziyi Zhu"
-      description="A collection of code snippets and notes – including algorithms, mathematical theorems and puzzles."
+      description="A collection of code snippets and notes – including algorithms, mathematical theorems and books."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
@@ -20,7 +20,7 @@ export default function Snippets({
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are a collection of code snippets and notes I've written in the past and
           saved. Some are algorithms that I find interesting, some are mathematical
-	  theorems, and some are just puzzles that I've solved.
+	  theorems, and some are just books that I've read.
         </p>
         <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">
           {snippets.map((snippet) => (
