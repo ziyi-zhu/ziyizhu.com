@@ -4,20 +4,16 @@ import { signIn, useSession } from 'next-auth/react';
 import useSWR, { useSWRConfig } from 'swr';
 
 import fetcher from 'lib/fetcher';
-import {
-  Form,
-  FormState,
-  GuestbookEntry as GuestbookEntryType
-} from 'lib/types';
+import { Form, FormState, GuestbookEntry } from 'lib/types';
 import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
 
-function GuestbookEntry({
+function GuestbookEntryItem({
   entry,
   user
 }: {
-  entry: GuestbookEntryType;
+  entry: GuestbookEntry;
   user?: any;
 }) {
   const { mutate } = useSWRConfig();
@@ -61,7 +57,7 @@ function GuestbookEntry({
 export default function Guestbook({
   fallbackData
 }: {
-  fallbackData: GuestbookEntryType[];
+  fallbackData: GuestbookEntry[];
 }) {
   const { data: session } = useSession();
 
@@ -70,7 +66,7 @@ export default function Guestbook({
   const { mutate } = useSWRConfig();
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef<HTMLInputElement>(null);
-  const { data: entries } = useSWR<GuestbookEntryType[]>(
+  const { data: entries } = useSWR<GuestbookEntry[]>(
     '/api/guestbook',
     fetcher,
     {
@@ -164,7 +160,11 @@ export default function Guestbook({
       <div className="mt-4 space-y-8">
         <Suspense fallback={null}>
           {entries?.map((entry) => (
-            <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
+            <GuestbookEntryItem
+              key={entry.id}
+              entry={entry}
+              user={session?.user}
+            />
           ))}
         </Suspense>
       </div>

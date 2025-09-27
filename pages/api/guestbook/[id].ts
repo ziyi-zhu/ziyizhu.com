@@ -1,14 +1,20 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { getSession } from 'next-auth/react';
+import { getServerSession } from 'next-auth/next';
+import { authOptions } from '../auth/[...nextauth]';
 import prisma from 'lib/prisma';
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const session = await getSession({ req });
+  const session = await getServerSession(req, res, authOptions);
 
   const { id } = req.query;
+
+  if (!session || !session.user) {
+    return res.status(403).send('Unauthorized');
+  }
+
   const { email } = session.user;
 
   const entry = await prisma.guestbook.findUnique({
@@ -26,7 +32,7 @@ export default async function handler(
     });
   }
 
-  if (!session || email !== entry.email) {
+  if (email !== entry?.email) {
     return res.status(403).send('Unauthorized');
   }
 
