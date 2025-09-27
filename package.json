@@ -6,7 +6,8 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "sanity-start": "sanity start"
+    "sanity-start": "sanity start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@next/font": "13.0.2",
