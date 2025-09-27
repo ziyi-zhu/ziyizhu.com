@@ -11,10 +11,7 @@ import rehypeKatex from 'rehype-katex';
 export async function mdxToHtml(source) {
   const mdxSource = await serialize(source, {
     mdxOptions: {
-      remarkPlugins: [
-        remarkGfm,
-        remarkMath
-      ],
+      remarkPlugins: [remarkGfm, remarkMath],
       rehypePlugins: [
         rehypeSlug,
         rehypeCodeTitles,

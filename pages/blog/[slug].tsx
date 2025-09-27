@@ -14,26 +14,8 @@ export default function PostPage({ post }: { post: Post }) {
     return <Tweet {...tweet} />;
   };
 
-  // Add custom styles for math equations
-  const mathStyles = {
-    '.math-display': {
-      overflowX: 'auto',
-      overflowY: 'hidden',
-      maxWidth: '100%',
-      padding: '0.5rem 0',
-    }
-  };
-
   return (
     <BlogLayout post={post}>
-      <style jsx global>{`
-        .math-display {
-          overflow-x: auto;
-          overflow-y: hidden;
-          max-width: 100%;
-          padding: 0.5rem 0;
-        }
-      `}</style>
       <MDXRemote
         {...post.content}
         components={

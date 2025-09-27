@@ -6,12 +6,18 @@ import { postUpdatedQuery } from 'lib/queries';
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
-) {  
-  const signature = req.headers[SIGNATURE_HEADER_NAME] as string
-  const body = await readBody(req) // Read the body into a string
-  if (!isValidSignature(body, signature, process.env.SANITY_STUDIO_REVALIDATE_SECRET)) {
-    res.status(401).json({ message: 'Invalid signature' })
-    return
+) {
+  const signature = req.headers[SIGNATURE_HEADER_NAME] as string;
+  const body = await readBody(req); // Read the body into a string
+  if (
+    !isValidSignature(
+      body,
+      signature,
+      process.env.SANITY_STUDIO_REVALIDATE_SECRET
+    )
+  ) {
+    res.status(401).json({ message: 'Invalid signature' });
+    return;
   }
 
   const { _id: id } = JSON.parse(body);
@@ -35,12 +41,12 @@ export const config = {
   api: {
     bodyParser: false
   }
-}
+};
 
 async function readBody(readable: NextApiRequest) {
-  const chunks = []
+  const chunks = [];
   for await (const chunk of readable) {
-    chunks.push(typeof chunk === 'string' ? Buffer.from(chunk) : chunk)
+    chunks.push(typeof chunk === 'string' ? Buffer.from(chunk) : chunk);
   }
-  return Buffer.concat(chunks).toString('utf8')
+  return Buffer.concat(chunks).toString('utf8');
 }

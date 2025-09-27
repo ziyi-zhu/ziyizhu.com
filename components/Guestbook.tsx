@@ -4,12 +4,22 @@ import { signIn, useSession } from 'next-auth/react';
 import useSWR, { useSWRConfig } from 'swr';
 
 import fetcher from 'lib/fetcher';
-import { Form, FormState, GuestbookEntry as GuestbookEntryType } from 'lib/types';
+import {
+  Form,
+  FormState,
+  GuestbookEntry as GuestbookEntryType
+} from 'lib/types';
 import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
 
-function GuestbookEntry({ entry, user }: { entry: GuestbookEntryType; user?: any }) {
+function GuestbookEntry({
+  entry,
+  user
+}: {
+  entry: GuestbookEntryType;
+  user?: any;
+}) {
   const { mutate } = useSWRConfig();
   const deleteEntry = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -23,7 +33,9 @@ function GuestbookEntry({ entry, user }: { entry: GuestbookEntryType; user?: any
 
   return (
     <div className="flex flex-col space-y-2">
-      <div className="prose dark:prose-dark w-full break-words">{entry.body}</div>
+      <div className="prose dark:prose-dark w-full break-words">
+        {entry.body}
+      </div>
       <div className="flex items-center space-x-3">
         <p className="text-sm text-gray-500">{entry.created_by}</p>
         <span className=" text-gray-200 dark:text-gray-800">/</span>
@@ -46,7 +58,11 @@ function GuestbookEntry({ entry, user }: { entry: GuestbookEntryType; user?: any
   );
 }
 
-export default function Guestbook({ fallbackData }: { fallbackData: GuestbookEntryType[] }) {
+export default function Guestbook({
+  fallbackData
+}: {
+  fallbackData: GuestbookEntryType[];
+}) {
   const { data: session } = useSession();
 
   console.log(session);
@@ -54,9 +70,13 @@ export default function Guestbook({ fallbackData }: { fallbackData: GuestbookEnt
   const { mutate } = useSWRConfig();
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef<HTMLInputElement>(null);
-  const { data: entries } = useSWR<GuestbookEntryType[]>('/api/guestbook', fetcher, {
-    fallbackData
-  });
+  const { data: entries } = useSWR<GuestbookEntryType[]>(
+    '/api/guestbook',
+    fetcher,
+    {
+      fallbackData
+    }
+  );
 
   const leaveEntry = async (e: React.FormEvent) => {
     e.preventDefault();

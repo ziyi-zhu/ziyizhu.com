@@ -214,3 +214,19 @@ table {
 .prose .callout > p {
   margin: 0 !important;
 }
+
+/* KaTeX Math Formula Styles */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.5rem 0;
+}
+
+.katex {
+  font-size: 1em;
+}
+
+.katex-display > .katex {
+  white-space: nowrap;
+}

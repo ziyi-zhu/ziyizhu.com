@@ -50,8 +50,14 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://www.ziyizhu.com${router.asPath}`} />
-        <link rel="canonical" href={`https://www.ziyizhu.com${router.asPath}`} />
+        <meta
+          property="og:url"
+          content={`https://www.ziyizhu.com${router.asPath}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://www.ziyizhu.com${router.asPath}`}
+        />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Ziyi Zhu" />
         <meta property="og:description" content={meta.description} />

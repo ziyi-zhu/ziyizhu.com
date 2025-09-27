@@ -22,7 +22,8 @@ export default function Home() {
                 <span className="font-semibold">Slingshot AI</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Solving challenging real-world problems with machine intelligence and data-driven mathematical tools.
+                Solving challenging real-world problems with machine
+                intelligence and data-driven mathematical tools.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -85,8 +86,8 @@ export default function Home() {
             Acoustic Guitar Cover
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-             Music and art are the guiding lights of the world.
-             This channel features some of my acoustic guitar cover of popular songs.
+            Music and art are the guiding lights of the world. This channel
+            features some of my acoustic guitar cover of popular songs.
           </p>
           <VideoCard
             index="01"
