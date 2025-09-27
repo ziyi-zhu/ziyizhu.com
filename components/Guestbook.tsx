@@ -4,14 +4,14 @@ import { signIn, useSession } from 'next-auth/react';
 import useSWR, { useSWRConfig } from 'swr';
 
 import fetcher from 'lib/fetcher';
-import { Form, FormState } from 'lib/types';
+import { Form, FormState, GuestbookEntry as GuestbookEntryType } from 'lib/types';
 import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
 
-function GuestbookEntry({ entry, user }) {
+function GuestbookEntry({ entry, user }: { entry: GuestbookEntryType; user?: any }) {
   const { mutate } = useSWRConfig();
-  const deleteEntry = async (e) => {
+  const deleteEntry = async (e: React.MouseEvent) => {
     e.preventDefault();
 
     await fetch(`/api/guestbook/${entry.id}`, {
@@ -46,25 +46,25 @@ function GuestbookEntry({ entry, user }) {
   );
 }
 
-export default function Guestbook({ fallbackData }) {
+export default function Guestbook({ fallbackData }: { fallbackData: GuestbookEntryType[] }) {
   const { data: session } = useSession();
 
   console.log(session);
 
   const { mutate } = useSWRConfig();
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
-  const inputEl = useRef(null);
-  const { data: entries } = useSWR('/api/guestbook', fetcher, {
+  const inputEl = useRef<HTMLInputElement>(null);
+  const { data: entries } = useSWR<GuestbookEntryType[]>('/api/guestbook', fetcher, {
     fallbackData
   });
 
-  const leaveEntry = async (e) => {
+  const leaveEntry = async (e: React.FormEvent) => {
     e.preventDefault();
     setForm({ state: Form.Loading });
 
     const res = await fetch('/api/guestbook', {
       body: JSON.stringify({
-        body: inputEl.current.value
+        body: inputEl.current?.value
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -81,7 +81,9 @@ export default function Guestbook({ fallbackData }) {
       return;
     }
 
-    inputEl.current.value = '';
+    if (inputEl.current) {
+      inputEl.current.value = '';
+    }
     mutate('/api/guestbook');
     setForm({
       state: Form.Success,

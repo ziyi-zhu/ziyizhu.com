@@ -73,3 +73,11 @@ export type Unsplash = {
   downloads: number;
   views: number;
 };
+
+export type GuestbookEntry = {
+  id: string;
+  body: string;
+  created_by: string;
+  created_at: string;
+  updated_at: string;
+};

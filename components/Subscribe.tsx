@@ -9,15 +9,15 @@ import LoadingSpinner from 'components/LoadingSpinner';
 
 export default function Subscribe() {
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
-  const inputEl = useRef(null);
+  const inputEl = useRef<HTMLInputElement>(null);
   const { data } = useSWR<Subscribers>('/api/subscribers', fetcher);
-  const subscriberCount = new Number(data?.count);
+  const subscriberCount = Number(data?.count) || 0;
 
-  const subscribe = async (e) => {
+  const subscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     setForm({ state: Form.Loading });
 
-    const email = inputEl.current.value;
+    const email = inputEl.current?.value;
     const res = await fetch(`/api/subscribe?email=${email}`, {
       method: 'POST'
     });
@@ -31,7 +31,9 @@ export default function Subscribe() {
       return;
     }
 
-    inputEl.current.value = '';
+    if (inputEl.current) {
+      inputEl.current.value = '';
+    }
     setForm({
       state: Form.Success,
       message: `Hooray! You're now on the list.`

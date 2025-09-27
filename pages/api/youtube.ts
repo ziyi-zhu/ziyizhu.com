@@ -7,15 +7,14 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const auth = await googleAuth.getClient();
   const youtube = google.youtube({
-    auth,
-    version: 'v3'
+    version: 'v3',
+    auth: googleAuth
   });
 
   const response = await youtube.channels.list({
-    id: 'UC0snS_FYHj_5y_uFmWzp2hg',
-    part: 'statistics'
+    id: ['UC0snS_FYHj_5y_uFmWzp2hg'],
+    part: ['statistics']
   });
 
   const channel = response.data.items[0];

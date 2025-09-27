@@ -3,10 +3,12 @@ import 'katex/dist/katex.min.css';
 
 import { ThemeProvider } from 'next-themes';
 import { SessionProvider } from 'next-auth/react';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 
-const interVariable = Inter();
+const interVariable = Inter({
+  subsets: ['latin']
+});
 
 export default function App({
   Component,

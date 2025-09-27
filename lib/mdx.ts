@@ -18,7 +18,6 @@ export async function mdxToHtml(source) {
       rehypePlugins: [
         rehypeSlug,
         rehypeCodeTitles,
-        rehypePrism,
         rehypeKatex,
         [
           rehypeAutolinkHeadings,
@@ -39,7 +38,7 @@ export async function mdxToHtml(source) {
   return {
     html: mdxSource,
     tweetIDs: tweetIDs || [],
-    wordCount: source.split(/\s+/gu).length,
+    wordCount: source.split(/\s+/g).length,
     readingTime: readingTime(source).text
   };
 }

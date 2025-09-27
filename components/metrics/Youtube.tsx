@@ -7,8 +7,8 @@ import MetricCard from 'components/metrics/Card';
 export default function YouTubeCard() {
   const { data } = useSWR<YouTube>('/api/youtube', fetcher);
 
-  const subscriberCount = new Number(data?.subscriberCount);
-  const viewCount = new Number(data?.viewCount);
+  const subscriberCount = Number(data?.subscriberCount) || 0;
+  const viewCount = Number(data?.viewCount) || 0;
   const link = 'https://www.youtube.com/channel/UC0snS_FYHj_5y_uFmWzp2hg';
 
   return (

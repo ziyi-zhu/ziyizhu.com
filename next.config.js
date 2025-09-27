@@ -4,15 +4,19 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: [
-      'i.scdn.co', // Spotify Album Art
-      'pbs.twimg.com', // Twitter Profile Picture
-      'cdn.sanity.io'
-    ]
-  },
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } }
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co'
+      },
+      {
+        protocol: 'https',
+        hostname: 'pbs.twimg.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io'
+      }
     ]
   },
   async headers() {
