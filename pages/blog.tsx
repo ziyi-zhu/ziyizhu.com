@@ -58,7 +58,7 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
-              title="Policy Optimization: From Vanilla Policy Gradients to GRPO"
+              title="Evolution of Policy Gradient Methods"
               excerpt="The blog explores the evolution from vanilla policy gradients to modern approaches like Proximal Policy Optimization (PPO) and the more recent Group Relative Policy Optimization (GRPO)."
               slug="policy-optimization"
             />

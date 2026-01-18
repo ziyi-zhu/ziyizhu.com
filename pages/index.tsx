@@ -44,7 +44,7 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
-              title="Policy Optimization: From Vanilla Policy Gradients to GRPO"
+              title="Evolution of Policy Gradient Methods"
               slug="policy-optimization"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
