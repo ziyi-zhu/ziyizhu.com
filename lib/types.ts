@@ -74,6 +74,11 @@ export type Unsplash = {
   views: number;
 };
 
+export type Author = {
+  paperCount: number | null;
+  citationCount: number | null;
+};
+
 export type GuestbookEntry = {
   id: string;
   body: string;
